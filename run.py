@@ -2,6 +2,7 @@ import os
 import argparse
 from models.FCNs import FCN8s, FCN16s, FCN32s
 from models.UNet import UNet
+from models.UNetplus import NestedUNet
 from models.CENet import CE_Net
 from models.CPFNet import CPFNet
 from models.UNetplus import NestedUNet
