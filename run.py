@@ -4,6 +4,7 @@ from models.FCNs import FCN8s, FCN16s, FCN32s
 from models.UNet import UNet
 from models.CENet import CE_Net
 from models.CPFNet import CPFNet
+from models.UNetplus import NestedUNet
 from train import train
 from test import test
 
@@ -25,7 +26,7 @@ else:
     elif args.model == 'UNet':
         model = UNet()
     elif args.model == 'UNet++':
-        model = UNet()
+        model = NestedUNet()
     elif args.model == 'CENet':
         model = CE_Net()
     else:
